@@ -1,1 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Corinne Marsiac</title>
+    <!-- Utilisation de Tailwind CSS pour un style moderne et responsive -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4 sm:p-8 md:p-12 lg:p-16">
+    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden">
+        <!-- Section d'en-tête et contact -->
+        <header class="bg-gray-800 text-white p-6 sm:p-8 md:p-10 flex flex-col md:flex-row items-center justify-between rounded-t-2xl">
+            <div>
+                <h1 class="text-3xl sm:text-4xl font-bold">Corinne MARSIAC</h1>
+                <p class="text-md sm:text-lg mt-2 font-medium">CUSTOMER SUCCESS MANAGER</p>
+                <p class="text-sm mt-1 opacity-80">"Une bonne technologie ne suffit pas, c'est l'expérience humaine qui fait toute la différence"</p>
+            </div>
+            <div class="mt-4 md:mt-0 text-center md:text-right">
+                <p>06 51 02 56 72</p>
+                <p>corinne.marsiac.csm@gmail.com</p>
+                <p>92500 Rueil-Malmaison</p>
+                <a href="https://www.linkedin.com/in/corinne-marsiac-csm/" target="_blank" class="text-blue-300 hover:text-blue-200 transition-colors">
+                    <svg class="h-6 w-6 inline-block mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.765s.784-1.765 1.75-1.765 1.75.79 1.75 1.765-.783 1.765-1.75 1.765zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                    Profil LinkedIn
+                </a>
+            </div>
+        </header>
+
+        <!-- Contenu principal du CV -->
+        <main class="p-6 sm:p-8 md:p-10">
+            <!-- Bouton de traduction -->
+            <div class="flex justify-end mb-4">
+                <button id="translate-btn" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg transition-colors duration-300 flex items-center">
+                    <span id="flag-icon" class="mr-2">🇫🇷</span>
+                    <span id="lang-text">Traduire en anglais</span>
+                </button>
+            </div>
+
+            <!-- Résumé professionnel -->
+            <section class="mb-8">
+                <h2 class="text-xl sm:text-2xl font-semibold text-gray-700 border-b-2 border-blue-500 pb-2 mb-4">Résumé</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    Professionnelle proactive, orientée solution et centrée sur la satisfaction client, avec plus de 10 ans d'expérience dans le SaaS RH B2B. Je transforme l'expérience client en levier d'adoption, de fidélisation, de rétention et de croissance durable.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Relation client B2B et B2C</span>
+                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">C-Levels</span>
+                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Customer-centric</span>
+                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Growth</span>
+                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Data-oriented</span>
+                </div>
+            </section>
+
+            <!-- Expériences professionnelles -->
+            <section class="mb-8">
+                <h2 class="text-xl sm:text-2xl font-semibold text-gray-700 border-b-2 border-blue-500 pb-2 mb-4">Expériences Professionnelles</h2>
+                
+                <div class="mb-6">
+                    <h3 class="text-lg font-bold text-gray-800">Customer Success Manager - Bootcamp</h3>
+                    <p class="text-sm font-medium text-gray-500">Kare School (08/2025 - ...)</p>
+                    <ul class="list-disc list-inside mt-2 text-gray-600">
+                        <li>Stratégies d'onboarding, d'adoption, de rétention et d'expansion.</li>
+                        <li>Pilotage des KPIs (NPS, CSAT, LTV, TTV, MRR/ARR, NRR).</li>
+                        <li>Détection des opportunités de croissance (upsell, cross-sell, renouvellement).</li>
+                        <li>Workflows d'automatisation dans des CRM (HubSpot, Zendesk).</li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-lg font-bold text-gray-800">Payroll Implementation Project Manager</h3>
+                    <p class="text-sm font-medium text-gray-500">ADP France, Paie SIRH, Nanterre (02/2022 - 11/2023)</p>
+                    <ul class="list-disc list-inside mt-2 text-gray-600">
+                        <li>Pilotage de projets de mise en place et de migrations pour des groupes internationaux.</li>
+                        <li>Analyse des besoins clients et rédaction de spécifications techniques.</li>
+                        <li>Formation à distance des utilisateurs, FAQ et documentation.</li>
+                        <li>Collaboration transverse avec les équipes Sales, AM, service client et techniques.</li>
+                    </ul>
+                    <p class="mt-2 text-sm text-gray-500"><strong>Résultats :</strong> 90% des projets livrés dans les délais. CSAT de 70%.</p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-lg font-bold text-gray-800">Local Payroll Account Manager</h3>
+                    <p class="text-sm font-medium text-gray-500">ADP France, Paie SIRH, Nanterre (09/2014 - 01/2022)</p>
+                    <ul class="list-disc list-inside mt-2 text-gray-600">
+                        <li>Gestion d'un portefeuille de 400 paies de clients mid-market internationaux.</li>
+                        <li>Animation des touchpoints stratégiques (atelier de formation, monthly review, QBR).</li>
+                        <li>Détection d'opportunités d'upsell/cross-sell.</li>
+                    </ul>
+                    <p class="mt-2 text-sm text-gray-500"><strong>Résultats :</strong> Transformation d'un détracteur (NPS: 0/10) en promoteur (NPS: 9/10) en 6 mois. Près de 100k€ de crédits URSSAF récupérés. Croissance du MRR.</p>
+                </div>
+            </section>
+
+            <!-- Formations et compétences -->
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h2 class="text-xl sm:text-2xl font-semibold text-gray-700 border-b-2 border-blue-500 pb-2 mb-4">Formations</h2>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>**Formation en Stratégie digitale** - *Online Sales Success* (2024)</li>
+                        <li>**Formation de Gestionnaire Paie** - *IFOCOP Cergy* (2013)</li>
+                        <li>**BAC+5 Master 2 Management** - *Université de Reims* (2010)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-xl sm:text-2xl font-semibold text-gray-700 border-b-2 border-blue-500 pb-2 mb-4">Compétences</h2>
+                    <p class="font-bold text-gray-700 mt-2">Softskills :</p>
+                    <p class="text-gray-600">Intelligence émotionnelle, Proactivité, Esprit d'analyse, Adaptabilité, Orientée solution, Collaboration. <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Assessfirst</span></p>
+                    <p class="font-bold text-gray-700 mt-4">Langues :</p>
+                    <p class="text-gray-600">Français (langue maternelle), Anglais (B2 professionnel).</p>
+                    <p class="font-bold text-gray-700 mt-4">Logiciels :</p>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        <span class="bg-gray-200 text-gray-800 text-xs px-2.5 py-0.5 rounded-full">Microsoft Office</span>
+                        <span class="bg-gray-200 text-gray-800 text-xs px-2.5 py-0.5 rounded-full">PowerBI</span>
+                        <span class="bg-gray-200 text-gray-800 text-xs px-2.5 py-0.5 rounded-full">ChatGPT</span>
+                        <span class="bg-gray-200 text-gray-800 text-xs px-2.5 py-0.5 rounded-full">Canva</span>
+                        <span class="bg-gray-200 text-gray-800 text-xs px-2.5 py-0.5 rounded-full">HubSpot</span>
+                        <span class="bg-gray-200 text-gray-800 text-xs px-2.5 py-0.5 rounded-full">Zendesk</span>
+                        <span class="bg-gray-200 text-gray-800 text-xs px-2.5 py-0.5 rounded-full">Notion</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+<script>
+    // Récupérer les éléments de la page à traduire
+    const elementsToTranslate = {
+        title: document.querySelector('title'),
+        h1: document.querySelector('h1'),
+        h2: document.querySelectorAll('h2'),
+        p: document.querySelectorAll('p'),
+        li: document.querySelectorAll('li'),
+        span: document.querySelectorAll('span'),
+        a: document.querySelector('a'),
+    };
+
+    // Textes originaux en français
+    const frenchTexts = {
+        h1: 'Corinne MARSIAC',
+        h2: {
+            'Résumé': 'Summary',
+            'Expériences Professionnelles': 'Professional Experience',
+            'Formations': 'Education',
+            'Compétences': 'Skills'
+        },
+        p: {
+            'CUSTOMER SUCCESS MANAGER': 'CUSTOMER SUCCESS MANAGER',
+            '"Une bonne technologie ne suffit pas, c\'est l\'expérience humaine qui fait toute la différence"': '"Good technology is not enough, it is the human experience that makes all the difference"',
+            'Professionnelle proactive, orientée solution et centrée sur la satisfaction client, avec plus de 10 ans d\'expérience dans le SaaS RH B2B. Je transforme l\'expérience client en levier d\'adoption, de fidélisation, de rétention et de croissance durable.': 'A proactive, solution-oriented professional focused on client satisfaction, with over 10 years of experience in B2B HR SaaS. I transform the client experience into a lever for adoption, loyalty, retention, and sustainable growth.',
+            'Kare School (08/2025 - ...)': 'Kare School (08/2025 - ...)',
+            'Stratégies d\'onboarding, d\'adoption, de rétention et d\'expansion.': 'Onboarding, adoption, retention, and expansion strategies.',
+            'Pilotage des KPIs (NPS, CSAT, LTV, TTV, MRR/ARR, NRR).': 'KPI management (NPS, CSAT, LTV, TTV, MRR/ARR, NRR).',
+            'Détection des opportunités de croissance (upsell, cross-sell, renouvellement).': 'Growth opportunity detection (upsell, cross-sell, renewal).',
+            'Workflows d\'automatisation dans des CRM (HubSpot, Zendesk).': 'Automation workflows in CRMs (HubSpot, Zendesk).',
+            'ADP France, Paie SIRH, Nanterre (02/2022 - 11/2023)': 'ADP France, Payroll HRIS, Nanterre (02/2022 - 11/2023)',
+            'Pilotage de projets de mise en place et de migrations pour des groupes internationaux.': 'Project management for international group implementations and migrations.',
+            'Analyse des besoins clients et rédaction de spécifications techniques.': 'Client needs analysis and technical specification writing.',
+            'Formation à distance des utilisateurs, FAQ et documentation.': 'Remote user training, FAQ, and documentation.',
+            'Collaboration transverse avec les équipes Sales, AM, service client et techniques.': 'Cross-functional collaboration with Sales, AM, client service, and technical teams.',
+            '90% des projets livrés dans les délais. CSAT de 70%.': '90% of projects delivered on time. 70% CSAT.',
+            'ADP France, Paie SIRH, Nanterre (09/2014 - 01/2022)': 'ADP France, Payroll HRIS, Nanterre (09/2014 - 01/2022)',
+            'Gestion d\'un portefeuille de 400 paies de clients mid-market internationaux.': 'Management of a portfolio of 400 payrolls for international mid-market clients.',
+            'Animation des touchpoints stratégiques (atelier de formation, monthly review, QBR).': 'Management of strategic touchpoints (training workshops, monthly reviews, QBRs).',
+            'Détection d\'opportunités d\'upsell/cross-sell.': 'Upsell/cross-sell opportunity detection.',
+            'Transformation d\'un détracteur (NPS: 0/10) en promoteur (NPS: 9/10) en 6 mois. Près de 100k€ de crédits URSSAF récupérés. Croissance du MRR.': 'Transformation of a detractor (NPS: 0/10) into a promoter (NPS: 9/10) in 6 months. Nearly €100k in URSSAF credits recovered. MRR growth.',
+            'Intelligence émotionnelle, Proactivité, Esprit d\'analyse, Adaptabilité, Orientée solution, Collaboration.': 'Emotional intelligence, Proactivity, Analytical mind, Adaptability, Solution-oriented, Collaboration.',
+            'Français (langue maternelle), Anglais (B2 professionnel).': 'French (native language), English (professional B2).',
+            'Microsoft Office': 'Microsoft Office',
+            'PowerBI': 'PowerBI',
+            'ChatGPT': 'ChatGPT',
+            'Canva': 'Canva',
+            'HubSpot': 'HubSpot',
+            'Zendesk': 'Zendesk',
+            'Notion': 'Notion',
+            'Assessfirst': 'Assessfirst',
+            'Profil LinkedIn': 'LinkedIn Profile',
+            '06 51 02 56 72': '06 51 02 56 72',
+            'corinne.marsiac.csm@gmail.com': 'corinne.marsiac.csm@gmail.com',
+            '92500 Rueil-Malmaison': '92500 Rueil-Malmaison',
+            'BAC+5 Master 2 Management - Université de Reims (2010)': 'Master 2 Management - University of Reims (2010)',
+            'Formation de Gestionnaire Paie - IFOCOP Cergy (2013)': 'Payroll Manager Training - IFOCOP Cergy (2013)',
+            'Formation en Stratégie digitale - Online Sales Success (2024)': 'Digital Strategy Training - Online Sales Success (2024)',
+            'Centres d\'intérêt': 'Interests',
+            'Marketing, techniques de vente, analyse de données, pâtisserie antillaise et française, mangas et animés japonais.': 'Marketing, sales techniques, data analysis, West Indian and French pastry, Japanese manga and anime.',
+            'CERTIFICATIONS & AUTO-FORMATION': 'CERTIFICATIONS & SELF-TRAINING',
+            'CCSM level 1 - Success Hacker (en cours, 2025)': 'CCSM level 1 - Success Hacker (in progress, 2025)',
+            'Certificat Gestion de projet - UNOW (2022)': 'Project Management Certificate - UNOW (2022)',
+            'Innovation tech & digitale': 'Tech & Digital Innovation',
+            'Gestion de projet agile (SCRUM)': 'Agile Project Management (SCRUM)',
+            'Développement personnel': 'Personal Development'
+        }
+    };
+
+    const englishTexts = {
+        h1: 'Corinne MARSIAC',
+        h2: {
+            'Summary': 'Résumé',
+            'Professional Experience': 'Expériences Professionnelles',
+            'Education': 'Formations',
+            'Skills': 'Compétences'
+        },
+        p: {
+            'CUSTOMER SUCCESS MANAGER': 'CUSTOMER SUCCESS MANAGER',
+            '"Good technology is not enough, it is the human experience that makes all the difference"': '"Une bonne technologie ne suffit pas, c\'est l\'expérience humaine qui fait toute la différence"',
+            'A proactive, solution-oriented professional focused on client satisfaction, with over 10 years of experience in B2B HR SaaS. I transform the client experience into a lever for adoption, loyalty, retention, and sustainable growth.': 'Professionnelle proactive, orientée solution et centrée sur la satisfaction client, avec plus de 10 ans d\'expérience dans le SaaS RH B2B. Je transforme l\'expérience client en levier d\'adoption, de fidélisation, de rétention et de croissance durable.',
+            'Kare School (08/2025 - ...)': 'Kare School (08/2025 - ...)',
+            'Onboarding, adoption, retention, and expansion strategies.': 'Stratégies d\'onboarding, d\'adoption, de rétention et d\'expansion.',
+            'KPI management (NPS, CSAT, LTV, TTV, MRR/ARR, NRR).': 'Pilotage des KPIs (NPS, CSAT, LTV, TTV, MRR/ARR, NRR).',
+            'Growth opportunity detection (upsell, cross-sell, renewal).': 'Détection des opportunités de croissance (upsell, cross-sell, renouvellement).',
+            'Automation workflows in CRMs (HubSpot, Zendesk).': 'Workflows d\'automatisation dans des CRM (HubSpot, Zendesk).',
+            'ADP France, Payroll HRIS, Nanterre (02/2022 - 11/2023)': 'ADP France, Paie SIRH, Nanterre (02/2022 - 11/2023)',
+            'Project management for international group implementations and migrations.': 'Pilotage de projets de mise en place et de migrations pour des groupes internationaux.',
+            'Client needs analysis and technical specification writing.': 'Analyse des besoins clients et rédaction de spécifications techniques.',
+            'Remote user training, FAQ, and documentation.': 'Formation à distance des utilisateurs, FAQ et documentation.',
+            'Cross-functional collaboration with Sales, AM, client service, and technical teams.': 'Collaboration transverse avec les équipes Sales, AM, service client et techniques.',
+            '90% of projects delivered on time. 70% CSAT.': '90% des projets livrés dans les délais. CSAT de 70%.',
+            'ADP France, Payroll HRIS, Nanterre (09/2014 - 01/2022)': 'ADP France, Paie SIRH, Nanterre (09/2014 - 01/2022)',
+            'Management of a portfolio of 400 payrolls for international mid-market clients.': 'Gestion d\'un portefeuille de 400 paies de clients mid-market internationaux.',
+            'Management of strategic touchpoints (training workshops, monthly reviews, QBRs).': 'Animation des touchpoints stratégiques (atelier de formation, monthly review, QBR).',
+            'Upsell/cross-sell opportunity detection.': 'Détection d\'opportunités d\'upsell/cross-sell.',
+            'Transformation of a detractor (NPS: 0/10) into a promoter (NPS: 9/10) in 6 months. Nearly €100k in URSSAF credits recovered. MRR growth.': 'Transformation d\'un détracteur (NPS: 0/10) en promoteur (NPS: 9/10) en 6 mois. Près de 100k€ de crédits URSSAF récupérés. Croissance du MRR.',
+            'Emotional intelligence, Proactivity, Analytical mind, Adaptability, Solution-oriented, Collaboration.': 'Intelligence émotionnelle, Proactivité, Esprit d\'analyse, Adaptabilité, Orientée solution, Collaboration.',
+            'French (native language), English (professional B2).': 'Français (langue maternelle), Anglais (B2 professionnel).',
+            'Microsoft Office': 'Microsoft Office',
+            'PowerBI': 'PowerBI',
+            'ChatGPT': 'ChatGPT',
+            'Canva': 'Canva',
+            'HubSpot': 'HubSpot',
+            'Zendesk': 'Zendesk',
+            'Notion': 'Notion',
+            'Assessfirst': 'Assessfirst',
+            'LinkedIn Profile': 'Profil LinkedIn',
+            '06 51 02 56 72': '06 51 02 56 72',
+            'corinne.marsiac.csm@gmail.com': 'corinne.marsiac.csm@gmail.com',
+            '92500 Rueil-Malmaison': '92500 Rueil-Malmaison',
+            'Master 2 Management - University of Reims (2010)': 'BAC+5 Master 2 Management - Université de Reims (2010)',
+            'Payroll Manager Training - IFOCOP Cergy (2013)': 'Formation de Gestionnaire Paie - IFOCOP Cergy (2013)',
+            'Digital Strategy Training - Online Sales Success (2024)': 'Formation en Stratégie digitale - Online Sales Success (2024)',
+            'Interests': 'Centres d\'intérêt',
+            'Marketing, sales techniques, data analysis, West Indian and French pastry, Japanese manga and anime.': 'Marketing, techniques de vente, analyse de données, pâtisserie antillaise et française, mangas et animés japonais.',
+            'CERTIFICATIONS & SELF-TRAINING': 'CERTIFICATIONS & AUTO-FORMATION',
+            'CCSM level 1 - Success Hacker (in progress, 2025)': 'CCSM level 1 - Success Hacker (en cours, 2025)',
+            'Project Management Certificate - UNOW (2022)': 'Certificat Gestion de projet - UNOW (2022)',
+            'Tech & Digital Innovation': 'Innovation tech & digitale',
+            'Agile Project Management (SCRUM)': 'Gestion de projet agile (SCRUM)',
+            'Personal Development': 'Développement personnel'
+        }
+    };
+    
+
+    const translateBtn = document.getElementById('translate-btn');
+    const flagIcon = document.getElementById('flag-icon');
+    const langText = document.getElementById('lang-text');
+    let isEnglish = false;
+
+    translateBtn.addEventListener('click', () => {
+        if (isEnglish) {
+            // Revenir au français
+            translate(frenchTexts);
+            langText.textContent = 'Traduire en anglais';
+            flagIcon.textContent = '🇫🇷';
+            isEnglish = false;
+        } else {
+            // Traduire en anglais
+            translate(englishTexts);
+            langText.textContent = 'Translate to French';
+            flagIcon.textContent = '🇬🇧';
+            isEnglish = true;
+        }
+    });
+
+    function translate(texts) {
+        // Traduire les titres h2
+        elementsToTranslate.h2.forEach(h2 => {
+            const originalText = h2.textContent.trim();
+            if (texts.h2[originalText]) {
+                h2.textContent = texts.h2[originalText];
+            }
+        });
+
+        // Traduire les paragraphes et les listes (par défaut, on a un mapping pour chaque phrase)
+        elementsToTranslate.p.forEach(p => {
+            const originalText = p.textContent.trim();
+            if (texts.p[originalText]) {
+                p.textContent = texts.p[originalText];
+            }
+        });
+        
+        elementsToTranslate.li.forEach(li => {
+            const originalText = li.textContent.trim();
+            if (texts.p[originalText]) {
+                li.textContent = texts.p[originalText];
+            }
+        });
+
+        // Traduire les spans
+        elementsToTranslate.span.forEach(span => {
+            const originalText = span.textContent.trim();
+            if (texts.p[originalText]) {
+                span.textContent = texts.p[originalText];
+            }
+        });
+
+        // Traduire le titre principal et le titre de la page
+        elementsToTranslate.h1.textContent = texts.h1;
+        document.title = "Corinne Marsiac's Resume";
+
+        // Traduire le lien LinkedIn
+        elementsToTranslate.a.textContent = texts.p['Profil LinkedIn'];
+    }
+
+</script>
+</body>
+</html>
 
