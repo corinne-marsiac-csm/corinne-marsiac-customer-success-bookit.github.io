@@ -3,321 +3,309 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Corinne Marsiac</title>
-    <!-- Utilisation de Tailwind CSS pour un style moderne et responsive -->
+    <title>BOOKIT - CS Play</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6;
+        }
+        /* Custom colors from the palette */
+        .bg-rose-poudre { background-color: #F4C2C2; }
+        
+        /* For horizontal scrolling screenshots */
+        .scroll-container {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        .scroll-container::-webkit-scrollbar {
+            display: none; /* Chrome, Safari and Opera */
         }
     </style>
 </head>
-<body class="bg-gray-100 p-4 sm:p-8 md:p-12 lg:p-16">
-    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden">
-        <!-- Section d'en-tête et contact -->
-        <header class="bg-gray-800 text-white p-6 sm:p-8 md:p-10 flex flex-col md:flex-row items-center justify-between rounded-t-2xl">
-            <div>
-                <h1 class="text-3xl sm:text-4xl font-bold">Corinne MARSIAC</h1>
-                <p class="text-md sm:text-lg mt-2 font-medium">CUSTOMER SUCCESS MANAGER</p>
-                <p class="text-sm mt-1 opacity-80">"Une bonne technologie ne suffit pas, c'est l'expérience humaine qui fait toute la différence"</p>
-            </div>
-            <div class="mt-4 md:mt-0 text-center md:text-right">
-                <p>06 51 02 56 72</p>
-                <p>corinne.marsiac.csm@gmail.com</p>
-                <p>92500 Rueil-Malmaison</p>
-                <a href="https://www.linkedin.com/in/corinne-marsiac-csm/" target="_blank" class="text-blue-300 hover:text-blue-200 transition-colors">
-                    <svg class="h-6 w-6 inline-block mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.765s.784-1.765 1.75-1.765 1.75.79 1.75 1.765-.783 1.765-1.75 1.765zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
-                    Profil LinkedIn
-                </a>
-            </div>
-        </header>
+<body class="bg-white text-black">
 
-        <!-- Contenu principal du CV -->
-        <main class="p-6 sm:p-8 md:p-10">
-            <!-- Bouton de traduction -->
-            <div class="flex justify-end mb-4">
-                <button id="translate-btn" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg transition-colors duration-300 flex items-center">
-                    <span id="flag-icon" class="mr-2">🇫🇷</span>
-                    <span id="lang-text">Traduire en anglais</span>
-                </button>
+    <!-- Mock-up Banner -->
+    <div class="bg-yellow-200 text-center p-2 text-sm text-yellow-800">
+        Ceci est une page factice créée à des fins de démonstration.
+    </div>
+
+    <!-- CS Play Header -->
+    <div class="w-full border-b border-gray-200">
+        <div class="container mx-auto max-w-6xl p-4 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <svg class="w-8 h-8" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M496 256c0 137-111 248-248 248S0 393 0 256 111 8 248 8s248 111 248 248z" fill="#F4C2C2"/><path d="M377 159.2c-19-33-50-57.2-85-69.2-22-7.6-45.8-9.6-69-6.2-22.6 3.4-44 12.4-62.8 26.2-18.8 13.8-34.2 32.2-45.2 53.6-11.2 21.6-17.6 45.6-19 70.4-1.2 25 .4 50 7.2 74 6.8 24 18.2 46.4 33.6 65.8 15.6 19.4 35.2 35.2 57.6 46.4 22.4 11.2 47 17.2 72.2 17.8 25.2.6 50-3.8 72.4-12.8s42-22.4 58.2-39.6c16-17.2 28.2-37.6 35.8-60.2 7.4-22.6 10.2-46.6 8.2-70.6-2-24-9-47-20.2-67.6z" fill="#FFFFFF"/><path d="M352 256c0 57.4-46.6 104-104 104s-104-46.6-104-104 46.6-104 104-104 104 46.6 104 104z" fill="#000000"/><path d="M352 256c0 57.4-46.6 104-104 104V152c57.4 0 104 46.6 104 104z" fill="#2D2D2D"/></svg>
+                <span class="text-2xl font-semibold">CS Play</span>
             </div>
+            <div class="flex items-center gap-6">
+                <i class="fa-solid fa-search text-xl text-gray-600"></i>
+                <i class="fa-solid fa-circle-question text-xl text-gray-600"></i>
+                <div class="w-8 h-8 rounded-full bg-rose-poudre flex items-center justify-center text-white font-bold">CM</div>
+            </div>
+        </div>
+    </div>
 
-            <!-- Résumé professionnel -->
-            <section class="mb-8">
-                <h2 class="text-xl sm:text-2xl font-semibold text-gray-700 border-b-2 border-blue-500 pb-2 mb-4">Résumé</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    Professionnelle proactive, orientée solution et centrée sur la satisfaction client, avec plus de 10 ans d'expérience dans le SaaS RH B2B. Je transforme l'expérience client en levier d'adoption, de fidélisation, de rétention et de croissance durable.
-                </p>
-                <div class="mt-4 flex flex-wrap gap-2">
-                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Relation client B2B et B2C</span>
-                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">C-Levels</span>
-                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Customer-centric</span>
-                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Growth</span>
-                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Data-oriented</span>
-                </div>
-            </section>
-
-            <!-- Expériences professionnelles -->
-            <section class="mb-8">
-                <h2 class="text-xl sm:text-2xl font-semibold text-gray-700 border-b-2 border-blue-500 pb-2 mb-4">Expériences Professionnelles</h2>
+    <div class="container mx-auto max-w-6xl p-4 md:p-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-16">
+            
+            <!-- Left Column: Main App Info -->
+            <div class="lg:col-span-2">
+                <!-- Main App Header -->
+                <div class="flex flex-col md:flex-row justify-between items-start gap-8 mb-6">
+                    <!-- Left side: Title, developer, stats -->
+                    <div class="flex-grow">
+                        <h1 class="text-5xl font-bold mb-1">BOOKIT</h1>
+                        <a href="#" class="text-black font-semibold text-lg hover:underline mb-6 inline-block">Réservations beauté & coiffure • Application fictive</a>
+                        
+                        <!-- Stats Bar -->
+                        <div class="grid grid-cols-3 text-center max-w-sm">
+                            <div class="border-r border-gray-200 px-2">
+                                <span class="font-bold text-lg">10k+</span>
+                                <p class="text-xs text-gray-600">Télech.</p>
+                            </div>
+                            <div class="px-2">
+                                <div class="font-bold text-lg border-2 border-gray-600 rounded-md w-7 h-7 flex items-center justify-center mx-auto text-sm">3</div>
+                                <p class="text-xs text-gray-600">PEGI 3</p>
+                            </div>
+                        </div>
+                    </div>
                 
-                <div class="mb-6">
-                    <h3 class="text-lg font-bold text-gray-800">Customer Success Manager - Bootcamp</h3>
-                    <p class="text-sm font-medium text-gray-500">Kare School (08/2025 - ...)</p>
-                    <ul class="list-disc list-inside mt-2 text-gray-600">
-                        <li>Stratégies d'onboarding, d'adoption, de rétention et d'expansion.</li>
-                        <li>Pilotage des KPIs (NPS, CSAT, LTV, TTV, MRR/ARR, NRR).</li>
-                        <li>Détection des opportunités de croissance (upsell, cross-sell, renouvellement).</li>
-                        <li>Workflows d'automatisation dans des CRM (HubSpot, Zendesk).</li>
-                    </ul>
-                </div>
-
-                <div class="mb-6">
-                    <h3 class="text-lg font-bold text-gray-800">Payroll Implementation Project Manager</h3>
-                    <p class="text-sm font-medium text-gray-500">ADP France, Paie SIRH, Nanterre (02/2022 - 11/2023)</p>
-                    <ul class="list-disc list-inside mt-2 text-gray-600">
-                        <li>Pilotage de projets de mise en place et de migrations pour des groupes internationaux.</li>
-                        <li>Analyse des besoins clients et rédaction de spécifications techniques.</li>
-                        <li>Formation à distance des utilisateurs, FAQ et documentation.</li>
-                        <li>Collaboration transverse avec les équipes Sales, AM, service client et techniques.</li>
-                    </ul>
-                    <p class="mt-2 text-sm text-gray-500"><strong>Résultats :</strong> 90% des projets livrés dans les délais. CSAT de 70%.</p>
-                </div>
-
-                <div class="mb-6">
-                    <h3 class="text-lg font-bold text-gray-800">Local Payroll Account Manager</h3>
-                    <p class="text-sm font-medium text-gray-500">ADP France, Paie SIRH, Nanterre (09/2014 - 01/2022)</p>
-                    <ul class="list-disc list-inside mt-2 text-gray-600">
-                        <li>Gestion d'un portefeuille de 400 paies de clients mid-market internationaux.</li>
-                        <li>Animation des touchpoints stratégiques (atelier de formation, monthly review, QBR).</li>
-                        <li>Détection d'opportunités d'upsell/cross-sell.</li>
-                    </ul>
-                    <p class="mt-2 text-sm text-gray-500"><strong>Résultats :</strong> Transformation d'un détracteur (NPS: 0/10) en promoteur (NPS: 9/10) en 6 mois. Près de 100k€ de crédits URSSAF récupérés. Croissance du MRR.</p>
-                </div>
-            </section>
-
-            <!-- Formations et compétences -->
-            <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <h2 class="text-xl sm:text-2xl font-semibold text-gray-700 border-b-2 border-blue-500 pb-2 mb-4">Formations</h2>
-                    <ul class="list-disc list-inside text-gray-600">
-                        <li>**Formation en Stratégie digitale** - *Online Sales Success* (2024)</li>
-                        <li>**Formation de Gestionnaire Paie** - *IFOCOP Cergy* (2013)</li>
-                        <li>**BAC+5 Master 2 Management** - *Université de Reims* (2010)</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="text-xl sm:text-2xl font-semibold text-gray-700 border-b-2 border-blue-500 pb-2 mb-4">Compétences</h2>
-                    <p class="font-bold text-gray-700 mt-2">Softskills :</p>
-                    <p class="text-gray-600">Intelligence émotionnelle, Proactivité, Esprit d'analyse, Adaptabilité, Orientée solution, Collaboration. <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Assessfirst</span></p>
-                    <p class="font-bold text-gray-700 mt-4">Langues :</p>
-                    <p class="text-gray-600">Français (langue maternelle), Anglais (B2 professionnel).</p>
-                    <p class="font-bold text-gray-700 mt-4">Logiciels :</p>
-                    <div class="flex flex-wrap gap-2 mt-2">
-                        <span class="bg-gray-200 text-gray-800 text-xs px-2.5 py-0.5 rounded-full">Microsoft Office</span>
-                        <span class="bg-gray-200 text-gray-800 text-xs px-2.5 py-0.5 rounded-full">PowerBI</span>
-                        <span class="bg-gray-200 text-gray-800 text-xs px-2.5 py-0.5 rounded-full">ChatGPT</span>
-                        <span class="bg-gray-200 text-gray-800 text-xs px-2.5 py-0.5 rounded-full">Canva</span>
-                        <span class="bg-gray-200 text-gray-800 text-xs px-2.5 py-0.5 rounded-full">HubSpot</span>
-                        <span class="bg-gray-200 text-gray-800 text-xs px-2.5 py-0.5 rounded-full">Zendesk</span>
-                        <span class="bg-gray-200 text-gray-800 text-xs px-2.5 py-0.5 rounded-full">Notion</span>
+                    <!-- Right side: Icon -->
+                    <div class="flex-shrink-0 order-first md:order-last mx-auto md:mx-0">
+                        <div class="w-28 h-28 bg-rose-poudre rounded-3xl flex items-center justify-center shadow-md">
+                            <span class="text-white font-bold text-5xl">BK</span>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </main>
+
+                <!-- Install Button -->
+                <div class="mb-8 flex items-center gap-8">
+                    <button class="bg-black text-white font-bold py-3 px-10 rounded-full text-lg hover:opacity-90 transition-opacity shadow-lg">
+                        Installer
+                    </button>
+                    <a href="#" class="flex items-center gap-2 text-black font-semibold">
+                        <i class="fa-solid fa-share-nodes"></i> Partager
+                    </a>
+                     <a href="#" class="flex items-center gap-2 text-black font-semibold">
+                        <i class="fa-regular fa-bookmark"></i> Ajouter à la liste de souhaits
+                    </a>
+                </div>
+
+                <!-- Main Illustrations -->
+                <div class="mb-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+                     <img src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg" alt="Illustration d'une femme" class="rounded-lg shadow-md w-full h-64 object-cover">
+                     <img src="https://images.pexels.com/photos/7755518/pexels-photo-7755518.jpeg" alt="Coiffeur séchant les cheveux d'une cliente" class="rounded-lg shadow-md w-full h-64 object-cover">
+                     <img src="https://images.pexels.com/photos/286951/pexels-photo-286951.jpeg" alt="Femme appliquant une lotion cosmétique" class="rounded-lg shadow-md w-full h-64 object-cover">
+                </div>
+
+                <!-- Screenshots -->
+                <div class="mb-8 flex space-x-4 overflow-x-auto pb-4 scroll-container">
+                    <img src="https://placehold.co/250x450/F4C2C2/FFFFFF?text=Agenda" alt="Réservation - Agenda digital sur BOOKIT" class="rounded-lg shadow-md h-64 w-auto flex-shrink-0">
+                    <img src="https://placehold.co/250x450/FFFFFF/000000?text=R%C3%A9servation" alt="Réservation en ligne sur BOOKIT" class="rounded-lg shadow-md h-64 w-auto flex-shrink-0">
+                    <img src="https://placehold.co/250x450/2D2D2D/FFFFFF?text=Paiement" alt="Réservation - Interface de paiement sur BOOKIT" class="rounded-lg shadow-md h-64 w-auto flex-shrink-0">
+                    <img src="https://placehold.co/250x450/CCCCCC/000000?text=Fid%C3%A9lit%C3%A9" alt="Réservation - Programme de fidélité sur BOOKIT" class="rounded-lg shadow-md h-64 w-auto flex-shrink-0">
+                </div>
+
+                <!-- Description -->
+                <div class="mb-8" id="description">
+                     <div class="flex justify-between items-center mb-2">
+                        <h2 class="text-xl font-semibold">À propos de cette application</h2>
+                        <i class="fa-solid fa-arrow-right"></i>
+                     </div>
+                     <p class="text-gray-700 leading-relaxed">
+                        Simplifiez vos réservations beauté et coiffure en un clic. Avec BOOKIT, trouvez votre salon, réservez 24/7 et recevez des rappels automatiques. Pour les pros : gagnez du temps avec la gestion des plannings, des paiements et de la fidélisation.
+                     </p>
+                </div>
+                
+                <!-- Tags -->
+                <div class="mb-8 flex flex-wrap gap-2">
+                    <span class="border border-gray-300 rounded-full px-3 py-1 text-sm text-gray-700">Beauté</span>
+                    <span class="border border-gray-300 rounded-full px-3 py-1 text-sm text-gray-700">Organisation</span>
+                    <span class="border border-gray-300 rounded-full px-3 py-1 text-sm text-gray-700">Style de vie</span>
+                </div>
+
+
+                <!-- Ratings & Reviews -->
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                         <h2 class="text-xl font-semibold">Notes et avis</h2>
+                         <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
+                        <!-- Average Rating -->
+                        <div class="text-center">
+                            <p class="text-6xl font-bold">3,25</p>
+                            <div class="flex text-black text-lg justify-center">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-1">1 198 avis</p>
+                        </div>
+                        <!-- Rating Bars -->
+                        <div class="w-full">
+                            <div class="flex items-center gap-2"><span class="text-sm">5</span><div class="w-full bg-gray-200 rounded-full h-2"><div class="bg-black h-2 rounded-full" style="width: 30%"></div></div></div>
+                            <div class="flex items-center gap-2"><span class="text-sm">4</span><div class="w-full bg-gray-200 rounded-full h-2"><div class="bg-black h-2 rounded-full" style="width: 20%"></div></div></div>
+                            <div class="flex items-center gap-2"><span class="text-sm">3</span><div class="w-full bg-gray-200 rounded-full h-2"><div class="bg-black h-2 rounded-full" style="width: 15%"></div></div></div>
+                            <div class="flex items-center gap-2"><span class="text-sm">2</span><div class="w-full bg-gray-200 rounded-full h-2"><div class="bg-black h-2 rounded-full" style="width: 20%"></div></div></div>
+                            <div class="flex items-center gap-2"><span class="text-sm">1</span><div class="w-full bg-gray-200 rounded-full h-2"><div class="bg-black h-2 rounded-full" style="width: 15%"></div></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Individual Reviews -->
+                    <div class="mt-8 space-y-6">
+                        <!-- Review 1 -->
+                        <div class="pt-4">
+                            <div class="flex justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-rose-poudre flex items-center justify-center text-white font-bold">M</div>
+                                    <p class="font-semibold">Manon D.</p>
+                                </div>
+                                <i class="fa-solid fa-ellipsis-v text-gray-500"></i>
+                            </div>
+                            <div class="flex items-center text-sm text-black my-1 ml-11">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span class="ml-2 text-gray-500 text-xs">il y a 2 semaines</span>
+                            </div>
+                            <p class="ml-11">"Super pratique, mes clientes adorent réserver en ligne"</p>
+                        </div>
+                         <!-- Review 2 -->
+                        <div class="pt-4">
+                            <div class="flex justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-black flex items-center justify-center text-white font-bold">L</div>
+                                    <p class="font-semibold">Léa Martin</p>
+                                </div>
+                                <i class="fa-solid fa-ellipsis-v text-gray-500"></i>
+                            </div>
+                            <div class="flex items-center text-sm text-black my-1 ml-11">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span class="ml-2 text-gray-500 text-xs">il y a 1 mois</span>
+                            </div>
+                            <p class="ml-11">"Simple et efficace, mon équipe a pris en main l’outil rapidement"</p>
+                        </div>
+                        <!-- Review 3 -->
+                        <div class="pt-4">
+                            <div class="flex justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-gray-400 flex items-center justify-center text-white font-bold">J</div>
+                                    <p class="font-semibold">Julien Petit</p>
+                                </div>
+                                <i class="fa-solid fa-ellipsis-v text-gray-500"></i>
+                            </div>
+                            <div class="flex items-center text-sm text-black my-1 ml-11">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                <span class="ml-2 text-gray-500 text-xs">il y a 2 mois</span>
+                            </div>
+                            <p class="ml-11">"Les rappels automatiques m’ont fait gagner du temps"</p>
+                        </div>
+                        <!-- Review 4 -->
+                        <div class="pt-4">
+                            <div class="flex justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-gray-400 flex items-center justify-center text-white font-bold">S</div>
+                                    <p class="font-semibold">Sophie L.</p>
+                                </div>
+                                <i class="fa-solid fa-ellipsis-v text-gray-500"></i>
+                            </div>
+                            <div class="flex items-center text-sm text-black my-1 ml-11">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                <span class="ml-2 text-gray-500 text-xs">il y a 3 mois</span>
+                            </div>
+                            <p class="ml-11">"L’onboarding était compliqué, j’ai mis du temps à tout configurer"</p>
+                        </div>
+                        <!-- Review 5 -->
+                        <div class="pt-4">
+                            <div class="flex justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-black flex items-center justify-center text-white font-bold">A</div>
+                                    <p class="font-semibold">Alexandre B.</p>
+                                </div>
+                                <i class="fa-solid fa-ellipsis-v text-gray-500"></i>
+                            </div>
+                            <div class="flex items-center text-sm text-black my-1 ml-11">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                <span class="ml-2 text-gray-500 text-xs">il y a 3 mois</span>
+                            </div>
+                            <p class="ml-11">"Pas de support le samedi, c’est gênant pour nous"</p>
+                        </div>
+                        <!-- Review 6 -->
+                        <div class="pt-4">
+                            <div class="flex justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-rose-poudre flex items-center justify-center text-white font-bold">C</div>
+                                    <p class="font-semibold">Chloé T.</p>
+                                </div>
+                                <i class="fa-solid fa-ellipsis-v text-gray-500"></i>
+                            </div>
+                            <div class="flex items-center text-sm text-black my-1 ml-11">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                <span class="ml-2 text-gray-500 text-xs">il y a 4 mois</span>
+                            </div>
+                            <p class="ml-11">"Certaines clientes âgées trouvent l’app difficile à utiliser"</p>
+                        </div>
+                    </div>
+                     <div class="mt-8 border-t pt-6">
+                        <a href="#" class="text-black font-semibold">Voir tous les avis</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Sidebar -->
+            <div class="lg:col-span-1 mt-12 lg:mt-0">
+                <!-- Similar Apps -->
+                <div class="mb-8">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-lg font-semibold">Applications similaires</h3>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="space-y-4">
+                        <a href="#" class="flex items-center gap-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAYFBMVEUCAgIAAAD///+VlZVOTk6CgoJ3d3eOjo4mKCjs7Oy7u7v4+Phvb290dHSZmZnf4OAvLy9CQkLKysq0tLStra3BwcGhoaFpaWk2NjYLCwva2tpgYGBHR0cZGRlTU1MjIyOJRX+2AAADEklEQVR4nO2Z4XaiMBBGGRQwBKUCogSV93/LzSRQEa30yK7JnvPdP1YDeDuGkJkJAgAAAAAAAAAAAAAAAAAA/G3oZ9w5raOnxO3JnRetwp9Q5dWR1gupMJSHsxOrl1Jaq3ZhZaSSbTwlSipptCoHVkbq/PTmu0SCrQ6ftzJS62dfq7VOKVvtPm71s5TRqtnq6pMUa5V6uPh0qF5LBXTJ9S2YeSZFkR5PPxyqGSltpUOVX/ySCsysenXAP2BeqtUHHH2TWusDIh+ldj5KeRepTB/w4YXqd3ff2S8p6oR36xRRosdLv1Z0EyjZevXso6Zwsc2b2U/xLk/uPdpPEV0VO8Vudp7P9+in2qQODvIZI1UnD6xKYXOsxFU28yLv+/xvNyclajd5+wupNNm7rCVcu82UxmU1qF8S/CpQze4SXACp3+Kn1M5FBWMGOpZVefJMKnBbnAYAAAAA+D+YJE0PO6i7PdXw9+2F7q8x/vj9zRhlwqCy/oKVuCv3EsUi/+o/oUSaVhqVgvsMRIUZok1uLyJkxW/XgmuO9KXU13tWtB0ycVtCoTSM76S4XjeUynnTztUfKkyhmigXRuokv9N5so3AzDQp362AaKlD03WbTNi85UEqDlMl+o26ySQq/X2He6lg03XXsKBuY0rFdFFyT8f3u25aKjWTodYxeJQiUuFp1UeRpUoZHqdSZvbsuUk6TMwsLJtcvF16HEntHqW4z6gjI0Q3SK1aKY9TKR5iqdt5VagWtCIGqVaE7TMpJc9EHKpeqqYkFM2s1EYtaZnyRJeaoX5ppG43d9yP9j8TS3EU1IwUh2pBI0lLyVyjosBqaKmLnvhdQ3ZGCR4V4cosBUaqKfs20b+Tik19vvmeo6mODVcPdbrOfQ7T5aBGyMsgZVvH21mpZIHUMa/GizbVuUGd+dtL1dfMErtaRoL/f9oXeWukDsVNKq/GUrt8u0CKozR+39jHA9kIfT98AvtzNo1dAuyAiXB/XtCMr8MHLkj4nz7rbk+v+6NGT8jpyZProAgBAAAAAAAAAAAAAAAAACzhD1IGIlM9KJsBAAAAAElFTkSuQmCC" alt="Logo de Planity" class="w-12 h-12 rounded-lg">
+                            <div>
+                                <p class="font-semibold">Planity</p>
+                                <p class="text-sm text-gray-600">Beauté</p>
+                            </div>
+                        </a>
+                        <a href="#" class="flex items-center gap-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAz1BMVEX/XDn/gIsAHmL/////Vi//gmz/VCz/WTX/8vD/aUz/foj/g43/go//jnv/WjMAGWH/saX/i5QAFmD/e4EAEV//YUf4f4v/dHb/eHz/USf/+fngdYb/bGH/cGn/ZE7/alz/6uf/29b/doL/YkH/0M7/Z1WnW3rqeYj/fWT/Sxz/p5n/xr7/f3j/vbP/RxL/l4b/h4H/YVtrQW8jJ2W3ZH6CSHFaNmrCZX52RnHSb4NJMmiXVHdBLGcmIWM2JmQABl3/oab/lZP/dFn/w8X/sreOBY2MAAAIKUlEQVR4nMWba2OaShCGQYirkKwmRBEVq8HUaMylTdv0fmKS//+bDreFXeQyizidjwTK05nZd2aWVVFQjLqnKsjMz71WC4dJoTYU6qmFBqVYMCZ1dYkHNTCAjvpygQZFrqHR+9pDg6JTINTwGyIUNM8nrRYeFDSlni/xoBRoSn2/QIOiMxmVwoIC6rn54wIPigDz3PyICAXVc/N7Dw9qBlx8qyilUKCgeh4LAg4UOM+/XuBB6RYQKo4ejqeggtDDgyIDqCAgQkFbhKhDwIICSueKMaHkFEw6zY+XiFDAVtj8iegpoHSak1YLDwoonenaw4ACSme69lCggNHrYYYPJp3mr0tEKKB0mr9biFCwrjOteyhQHkg6zV8XmFAzCJM6fGohQsFSKuk5caB0WEp97qF6ClL4zMmfFiaUB3LUxwtMKPoBAjX82UOFgqSU+UNI8+OHD6JSyWiFBDUAMKmrvy1MKFBKRZuveFAglTK/9XA9BVApc5JJ82NDQXopsRYfH4pOzWqo4e8s05E9BUgp8zmbUZJQZE2k7vcgKfV9L3pSUITcvkpRQTaFzX0mGSjdm2snuswDgImPG9brQLW7c00SClBj9kVKBqp9M9YkoQCCYP7YR4JDOTcdTRIKUmOynZQUlHOmabJQkOHK/JPDBIRaP2jyUIDhypz8VxvK2Wg1oACCwD4x1IBa97UaUJAtoNV+iYFBEedOqwUFiN5zTpoDoEj7VhOgSL5xT4RG/abTyJQZI7UI6nNu9CqhiL7URKhuvtHkkfjC9jwwnumcs7B9GOaoOQCKKgtNgGp3F51cO2FUOnfDeMH56mo5Tv9wbhSUmGqotl/uslCZK8yW6/gZ54G//JJSXb1wd1+pBSWmEkp/zRIUQ2lpWnV41qs0o0bJo+OdZRSUmCqo9msn++YSqL7DXNXnL5uJqww7WcZL18rtg6uhyM0eUxnU3ItdRYT/y9tVCrUbxxe3dpBSTwXRK4fqhyZKgrfpp8YpmKY9MA1b80900jbdcjuJo4Lo5ZaYqvCRdmDrMwFK0duJOZR32/yepeINz/qeusqN5GW8Cx2VHdahqy/MrAwUb2L6vLI/6ryOdLj4RetvEThKXf0sYjoQinh8+ty22SMFqmBtuYx6LhCpg6Ey6ZOMFTrPurhKoToso/wSUxi9Q6HIK++TRBUG79zV8c5I4ucn1fgxcJQ6LGY6FEoRSuM4TnXqbsfc5UQVDPvNd9Q0dNSX4ugdDnXCu+ohyqqB4fJh1ZL4jXwPRo4qahAagVLWvCosw6TSXdXe8VCJKoxe4oxSJ7nNeVNQ4koLewV/Wrc+8aowTzJ914kdVRa9w6GIUHdu/awi09OgpPCsTBWsXVj1hA/Gx4DKCGhQAP3XGpbLszJVMEbuKHTUqsxRDUARj4fqOzT8kG3YvCqwXsGwrMhRuTNog1DKPb/S5l1ixT7JUQXWnQ/L1l4jUBlVmLGWQGAVt/QmZUiNQIn1dx6Pe8Zoy7OmvYJa0pw3CCWqwjlbaS4v9nMBqnTtNQOl3Od15VlVSKnMSWmaNwQlqML4nK20qSD26VhTsfYagiLdvK6c9XQia/XaawhKafPN+phBWVveVekEUbH2pKHO2rn36F0+fdhKM9w3npXtLFStPWmojZN/0z2vCmxWN2w7j7Vq7UlDLQugdP6mJH3EXoEVwFUVEwBKeJ9fRQpu416/HKl5qvBiwdYeCEqY4oril+5AatougbLclLUTNS3qMH9LUQ6KCEmsKQV7eeuk/s6nyR4erwp9OwrqqgoJtucp7B4svGQBCpFcJ6rwYqd7GqNPjLWzDTupip4TDCXsL/r/+onnOP7I7iivHneXfhK/fr61UvG2XMb65sZbikWbUpJQQr0NnHW3eXjY3C3m3E10wOrvncvt3hmjx1jsY0epq7KJQSJ8TsHuDy/vnmU/hhfH7ojffmXD1jJONPNLtaNgUFlXRbbh1L1t+6IUst9Oha1qw47aql2caCV7LXJQinOXw9S/T2+g4QATqML4UXAUE9B4iIFFDwZF9MU+E+cnOgvTx55zb09dteEdlT3WUh9K/OoQLrETzk/xhz3D7bOhXHCVP2x1PsWoZXstslAKaZ9xzur0PaFbiM68+gOM//ZRhslnfU+EU1XzP8bUg/J16L67WS58W97d3Iu1hp3Dtdz33Z6jwmad6YH5DGGS+bBNHId4nuKsxUKTHpHyXeVae1CGZU9tFr3qYiwJlW/8sS1rtM8UUCWXs0fKjgQlfNVLPk9lqJKr5VsITUGBf18cRw8DikgxgYrxwVDgn4LGVrp91wwUgRz6ERyVcwCoYSjijeSYYMX4ICg6MCSZ1OHfI3uKfpAkKjwZ0RgUUeSWXQT1CyYINaHoAPiLPREKJuf1oAiZSqdTYFBBqANFB5JKwBwF6c7rQRFlelqLCS4I0lB0ViebIiioIMieXhzI6iXHBOwQJKF0z1ZrM4HGdVkoqszsmskUQwE7BDgUpdeHeCmwgvNbdaEoHbjGQV5SwSMDDIrq5INdSyszULCRoRqKUmUwHR3qoxhKIqWKoAjVqXJtWweHjdlQInoZKOqbT+PNrl0/Zk0BqWrZaZs8KBpbwDSYXU9dO5zSGgQKoQrPSuVCWaH5k9kps0ZpGJRMSrWUo3EINsn+Xqcc6ug8gRWdMv23UMDRGBdKKqWwoKSYcKDgwxUmlFxKIUFVf7jChxp+k2LCgZo8VYNgQ0lKJxKUZJ7jQMlJJxKUpKNQoFZy0okCVXZK+N9BwXc28KBOqw4B/QuolaSeo0DJtcKB/Q/xpt0xoT+z3wAAAABJRU5ErkJggg==" alt="Logo de Treatwell" class="w-12 h-12 rounded-lg">
+                            <div>
+                                <p class="font-semibold">Treatwell</p>
+                                <p class="text-sm text-gray-600">Beauté</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- App Support -->
+                <div class="border-t pt-6">
+                    <h3 class="text-lg font-semibold mb-4">Assistance de l'appli</h3>
+                    <div class="space-y-3">
+                         <a href="#" class="flex items-center gap-3 text-gray-700 hover:text-black">
+                            <i class="fa-solid fa-globe w-5"></i>
+                            <span>Site Web</span>
+                         </a>
+                         <a href="#" class="flex items-center gap-3 text-gray-700 hover:text-black">
+                            <i class="fa-solid fa-envelope w-5"></i>
+                            <span>E-mail d'assistance</span>
+                         </a>
+                         <a href="#" class="flex items-center gap-3 text-gray-700 hover:text-black">
+                            <i class="fa-solid fa-shield-halved w-5"></i>
+                            <span>Règles de confidentialité</span>
+                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-<script>
-    // Récupérer les éléments de la page à traduire
-    const elementsToTranslate = {
-        title: document.querySelector('title'),
-        h1: document.querySelector('h1'),
-        h2: document.querySelectorAll('h2'),
-        p: document.querySelectorAll('p'),
-        li: document.querySelectorAll('li'),
-        span: document.querySelectorAll('span'),
-        a: document.querySelector('a'),
-    };
-
-    // Textes originaux en français
-    const frenchTexts = {
-        h1: 'Corinne MARSIAC',
-        h2: {
-            'Résumé': 'Summary',
-            'Expériences Professionnelles': 'Professional Experience',
-            'Formations': 'Education',
-            'Compétences': 'Skills'
-        },
-        p: {
-            'CUSTOMER SUCCESS MANAGER': 'CUSTOMER SUCCESS MANAGER',
-            '"Une bonne technologie ne suffit pas, c\'est l\'expérience humaine qui fait toute la différence"': '"Good technology is not enough, it is the human experience that makes all the difference"',
-            'Professionnelle proactive, orientée solution et centrée sur la satisfaction client, avec plus de 10 ans d\'expérience dans le SaaS RH B2B. Je transforme l\'expérience client en levier d\'adoption, de fidélisation, de rétention et de croissance durable.': 'A proactive, solution-oriented professional focused on client satisfaction, with over 10 years of experience in B2B HR SaaS. I transform the client experience into a lever for adoption, loyalty, retention, and sustainable growth.',
-            'Kare School (08/2025 - ...)': 'Kare School (08/2025 - ...)',
-            'Stratégies d\'onboarding, d\'adoption, de rétention et d\'expansion.': 'Onboarding, adoption, retention, and expansion strategies.',
-            'Pilotage des KPIs (NPS, CSAT, LTV, TTV, MRR/ARR, NRR).': 'KPI management (NPS, CSAT, LTV, TTV, MRR/ARR, NRR).',
-            'Détection des opportunités de croissance (upsell, cross-sell, renouvellement).': 'Growth opportunity detection (upsell, cross-sell, renewal).',
-            'Workflows d\'automatisation dans des CRM (HubSpot, Zendesk).': 'Automation workflows in CRMs (HubSpot, Zendesk).',
-            'ADP France, Paie SIRH, Nanterre (02/2022 - 11/2023)': 'ADP France, Payroll HRIS, Nanterre (02/2022 - 11/2023)',
-            'Pilotage de projets de mise en place et de migrations pour des groupes internationaux.': 'Project management for international group implementations and migrations.',
-            'Analyse des besoins clients et rédaction de spécifications techniques.': 'Client needs analysis and technical specification writing.',
-            'Formation à distance des utilisateurs, FAQ et documentation.': 'Remote user training, FAQ, and documentation.',
-            'Collaboration transverse avec les équipes Sales, AM, service client et techniques.': 'Cross-functional collaboration with Sales, AM, client service, and technical teams.',
-            '90% des projets livrés dans les délais. CSAT de 70%.': '90% of projects delivered on time. 70% CSAT.',
-            'ADP France, Paie SIRH, Nanterre (09/2014 - 01/2022)': 'ADP France, Payroll HRIS, Nanterre (09/2014 - 01/2022)',
-            'Gestion d\'un portefeuille de 400 paies de clients mid-market internationaux.': 'Management of a portfolio of 400 payrolls for international mid-market clients.',
-            'Animation des touchpoints stratégiques (atelier de formation, monthly review, QBR).': 'Management of strategic touchpoints (training workshops, monthly reviews, QBRs).',
-            'Détection d\'opportunités d\'upsell/cross-sell.': 'Upsell/cross-sell opportunity detection.',
-            'Transformation d\'un détracteur (NPS: 0/10) en promoteur (NPS: 9/10) en 6 mois. Près de 100k€ de crédits URSSAF récupérés. Croissance du MRR.': 'Transformation of a detractor (NPS: 0/10) into a promoter (NPS: 9/10) in 6 months. Nearly €100k in URSSAF credits recovered. MRR growth.',
-            'Intelligence émotionnelle, Proactivité, Esprit d\'analyse, Adaptabilité, Orientée solution, Collaboration.': 'Emotional intelligence, Proactivity, Analytical mind, Adaptability, Solution-oriented, Collaboration.',
-            'Français (langue maternelle), Anglais (B2 professionnel).': 'French (native language), English (professional B2).',
-            'Microsoft Office': 'Microsoft Office',
-            'PowerBI': 'PowerBI',
-            'ChatGPT': 'ChatGPT',
-            'Canva': 'Canva',
-            'HubSpot': 'HubSpot',
-            'Zendesk': 'Zendesk',
-            'Notion': 'Notion',
-            'Assessfirst': 'Assessfirst',
-            'Profil LinkedIn': 'LinkedIn Profile',
-            '06 51 02 56 72': '06 51 02 56 72',
-            'corinne.marsiac.csm@gmail.com': 'corinne.marsiac.csm@gmail.com',
-            '92500 Rueil-Malmaison': '92500 Rueil-Malmaison',
-            'BAC+5 Master 2 Management - Université de Reims (2010)': 'Master 2 Management - University of Reims (2010)',
-            'Formation de Gestionnaire Paie - IFOCOP Cergy (2013)': 'Payroll Manager Training - IFOCOP Cergy (2013)',
-            'Formation en Stratégie digitale - Online Sales Success (2024)': 'Digital Strategy Training - Online Sales Success (2024)',
-            'Centres d\'intérêt': 'Interests',
-            'Marketing, techniques de vente, analyse de données, pâtisserie antillaise et française, mangas et animés japonais.': 'Marketing, sales techniques, data analysis, West Indian and French pastry, Japanese manga and anime.',
-            'CERTIFICATIONS & AUTO-FORMATION': 'CERTIFICATIONS & SELF-TRAINING',
-            'CCSM level 1 - Success Hacker (en cours, 2025)': 'CCSM level 1 - Success Hacker (in progress, 2025)',
-            'Certificat Gestion de projet - UNOW (2022)': 'Project Management Certificate - UNOW (2022)',
-            'Innovation tech & digitale': 'Tech & Digital Innovation',
-            'Gestion de projet agile (SCRUM)': 'Agile Project Management (SCRUM)',
-            'Développement personnel': 'Personal Development'
-        }
-    };
-
-    const englishTexts = {
-        h1: 'Corinne MARSIAC',
-        h2: {
-            'Summary': 'Résumé',
-            'Professional Experience': 'Expériences Professionnelles',
-            'Education': 'Formations',
-            'Skills': 'Compétences'
-        },
-        p: {
-            'CUSTOMER SUCCESS MANAGER': 'CUSTOMER SUCCESS MANAGER',
-            '"Good technology is not enough, it is the human experience that makes all the difference"': '"Une bonne technologie ne suffit pas, c\'est l\'expérience humaine qui fait toute la différence"',
-            'A proactive, solution-oriented professional focused on client satisfaction, with over 10 years of experience in B2B HR SaaS. I transform the client experience into a lever for adoption, loyalty, retention, and sustainable growth.': 'Professionnelle proactive, orientée solution et centrée sur la satisfaction client, avec plus de 10 ans d\'expérience dans le SaaS RH B2B. Je transforme l\'expérience client en levier d\'adoption, de fidélisation, de rétention et de croissance durable.',
-            'Kare School (08/2025 - ...)': 'Kare School (08/2025 - ...)',
-            'Onboarding, adoption, retention, and expansion strategies.': 'Stratégies d\'onboarding, d\'adoption, de rétention et d\'expansion.',
-            'KPI management (NPS, CSAT, LTV, TTV, MRR/ARR, NRR).': 'Pilotage des KPIs (NPS, CSAT, LTV, TTV, MRR/ARR, NRR).',
-            'Growth opportunity detection (upsell, cross-sell, renewal).': 'Détection des opportunités de croissance (upsell, cross-sell, renouvellement).',
-            'Automation workflows in CRMs (HubSpot, Zendesk).': 'Workflows d\'automatisation dans des CRM (HubSpot, Zendesk).',
-            'ADP France, Payroll HRIS, Nanterre (02/2022 - 11/2023)': 'ADP France, Paie SIRH, Nanterre (02/2022 - 11/2023)',
-            'Project management for international group implementations and migrations.': 'Pilotage de projets de mise en place et de migrations pour des groupes internationaux.',
-            'Client needs analysis and technical specification writing.': 'Analyse des besoins clients et rédaction de spécifications techniques.',
-            'Remote user training, FAQ, and documentation.': 'Formation à distance des utilisateurs, FAQ et documentation.',
-            'Cross-functional collaboration with Sales, AM, client service, and technical teams.': 'Collaboration transverse avec les équipes Sales, AM, service client et techniques.',
-            '90% of projects delivered on time. 70% CSAT.': '90% des projets livrés dans les délais. CSAT de 70%.',
-            'ADP France, Payroll HRIS, Nanterre (09/2014 - 01/2022)': 'ADP France, Paie SIRH, Nanterre (09/2014 - 01/2022)',
-            'Management of a portfolio of 400 payrolls for international mid-market clients.': 'Gestion d\'un portefeuille de 400 paies de clients mid-market internationaux.',
-            'Management of strategic touchpoints (training workshops, monthly reviews, QBRs).': 'Animation des touchpoints stratégiques (atelier de formation, monthly review, QBR).',
-            'Upsell/cross-sell opportunity detection.': 'Détection d\'opportunités d\'upsell/cross-sell.',
-            'Transformation of a detractor (NPS: 0/10) into a promoter (NPS: 9/10) in 6 months. Nearly €100k in URSSAF credits recovered. MRR growth.': 'Transformation d\'un détracteur (NPS: 0/10) en promoteur (NPS: 9/10) en 6 mois. Près de 100k€ de crédits URSSAF récupérés. Croissance du MRR.',
-            'Emotional intelligence, Proactivity, Analytical mind, Adaptability, Solution-oriented, Collaboration.': 'Intelligence émotionnelle, Proactivité, Esprit d\'analyse, Adaptabilité, Orientée solution, Collaboration.',
-            'French (native language), English (professional B2).': 'Français (langue maternelle), Anglais (B2 professionnel).',
-            'Microsoft Office': 'Microsoft Office',
-            'PowerBI': 'PowerBI',
-            'ChatGPT': 'ChatGPT',
-            'Canva': 'Canva',
-            'HubSpot': 'HubSpot',
-            'Zendesk': 'Zendesk',
-            'Notion': 'Notion',
-            'Assessfirst': 'Assessfirst',
-            'LinkedIn Profile': 'Profil LinkedIn',
-            '06 51 02 56 72': '06 51 02 56 72',
-            'corinne.marsiac.csm@gmail.com': 'corinne.marsiac.csm@gmail.com',
-            '92500 Rueil-Malmaison': '92500 Rueil-Malmaison',
-            'Master 2 Management - University of Reims (2010)': 'BAC+5 Master 2 Management - Université de Reims (2010)',
-            'Payroll Manager Training - IFOCOP Cergy (2013)': 'Formation de Gestionnaire Paie - IFOCOP Cergy (2013)',
-            'Digital Strategy Training - Online Sales Success (2024)': 'Formation en Stratégie digitale - Online Sales Success (2024)',
-            'Interests': 'Centres d\'intérêt',
-            'Marketing, sales techniques, data analysis, West Indian and French pastry, Japanese manga and anime.': 'Marketing, techniques de vente, analyse de données, pâtisserie antillaise et française, mangas et animés japonais.',
-            'CERTIFICATIONS & SELF-TRAINING': 'CERTIFICATIONS & AUTO-FORMATION',
-            'CCSM level 1 - Success Hacker (in progress, 2025)': 'CCSM level 1 - Success Hacker (en cours, 2025)',
-            'Project Management Certificate - UNOW (2022)': 'Certificat Gestion de projet - UNOW (2022)',
-            'Tech & Digital Innovation': 'Innovation tech & digitale',
-            'Agile Project Management (SCRUM)': 'Gestion de projet agile (SCRUM)',
-            'Personal Development': 'Développement personnel'
-        }
-    };
-    
-
-    const translateBtn = document.getElementById('translate-btn');
-    const flagIcon = document.getElementById('flag-icon');
-    const langText = document.getElementById('lang-text');
-    let isEnglish = false;
-
-    translateBtn.addEventListener('click', () => {
-        if (isEnglish) {
-            // Revenir au français
-            translate(frenchTexts);
-            langText.textContent = 'Traduire en anglais';
-            flagIcon.textContent = '🇫🇷';
-            isEnglish = false;
-        } else {
-            // Traduire en anglais
-            translate(englishTexts);
-            langText.textContent = 'Translate to French';
-            flagIcon.textContent = '🇬🇧';
-            isEnglish = true;
-        }
-    });
-
-    function translate(texts) {
-        // Traduire les titres h2
-        elementsToTranslate.h2.forEach(h2 => {
-            const originalText = h2.textContent.trim();
-            if (texts.h2[originalText]) {
-                h2.textContent = texts.h2[originalText];
-            }
-        });
-
-        // Traduire les paragraphes et les listes (par défaut, on a un mapping pour chaque phrase)
-        elementsToTranslate.p.forEach(p => {
-            const originalText = p.textContent.trim();
-            if (texts.p[originalText]) {
-                p.textContent = texts.p[originalText];
-            }
-        });
-        
-        elementsToTranslate.li.forEach(li => {
-            const originalText = li.textContent.trim();
-            if (texts.p[originalText]) {
-                li.textContent = texts.p[originalText];
-            }
-        });
-
-        // Traduire les spans
-        elementsToTranslate.span.forEach(span => {
-            const originalText = span.textContent.trim();
-            if (texts.p[originalText]) {
-                span.textContent = texts.p[originalText];
-            }
-        });
-
-        // Traduire le titre principal et le titre de la page
-        elementsToTranslate.h1.textContent = texts.h1;
-        document.title = "Corinne Marsiac's Resume";
-
-        // Traduire le lien LinkedIn
-        elementsToTranslate.a.textContent = texts.p['Profil LinkedIn'];
-    }
-
-</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
 
